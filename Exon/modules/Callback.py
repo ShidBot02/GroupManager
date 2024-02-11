@@ -119,7 +119,7 @@ def ABG_about_callback(update, context):
 
     elif query.data == "ABG_notes":
         query.message.edit_text(
-            text=f"<b><u>SETTING UP NOTES</u> :</b>\n\nYou can Save message/media/audio or anything as notes.\n\nTo get a note simple use # at the beginning of predetermined word.\nYou can also set buttons for notes and filtters (Refer help menu)",
+            text=f"<b><u>SETTING UP NOTES</u> :</b>\n\nYou can Save message/media/audio or anything as notes.\n\nTo get a note simple use # at the beginning of predetermined word.\n\nYou can also set buttons for notes and filtters (Refer help menu)\n\n**",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="⬅️ Back", callback_data="ABG_"),
