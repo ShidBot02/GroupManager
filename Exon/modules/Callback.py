@@ -75,8 +75,8 @@ def ABG_about_callback(update, context):
     query = update.callback_query
     if query.data == "ABG_":
         query.message.edit_text(
-            text=f"<b>🤖 {BOT_NAME}</b> :"
-            "\n\nI can restrict users, Greet users with customizable welcome message, Set a group's Ruels, Advance anti-flood system, Warn users until they reach max limits with each predefined actions such as ban, mute, kick etc., Note keeping sysytem, Blacklists, Even Predetermined replies on certain keywords, Check admins permissions before executing any command and more stuffs.",
+            text=f"*🤖 {BOT_NAME} :*"
+            "\n\n*I can restrict users, Greet users with customizable welcome message, Set a group's Ruels, Advance anti-flood system, Warn users until they reach max limits with each predefined actions such as ban, mute, kick etc., Note keeping sysytem, Blacklists, Even Predetermined replies on certain keywords, Check admins permissions before executing any command and more stuffs.\n\n👨‍💻 Modified by @Shidoteshika1*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -95,12 +95,6 @@ def ABG_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="sᴏᴜʀᴄᴇ",
-                            callback_data="source_",
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
                             text="⬅️ Back", callback_data="start_back"
                         ),
                     ],
@@ -110,7 +104,7 @@ def ABG_about_callback(update, context):
 
     elif query.data == "ABG_admin":
         query.message.edit_text(
-            text=f"━━━━━━━ *MUSIC PANNEL* ━━━━━━━\n\nHelp for Music Module\n\nᴏ*Commands Only for Admins;*\n\n*/pause* - Pause thcurrent ongoing stream.\n*/resume* - Resume the paused stream.\n*/skip* or */next* - Skip the current ongoing stream.\n*/end* or */stop* - End the current ongoing stream.\n\n*Commands to Autho/Unauth any Users :*\n• Authorized users can skip, pause, resume and end the stream without admin rights./n/n*/auth* username or reply to users message.\n- ᴀᴅᴅ ᴀ ᴜsᴇʀ ᴛᴏ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀs ʟɪsᴛ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴩ.\n*/unauth* username or reply to users message.\n- ʀᴇᴍᴏᴠᴇs ᴛʜᴇ ᴜsᴇʀ ғʀᴏᴍ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀs ʟɪsᴛ.\n*/authusers* - Shows the list of authorized users of the group.\n\n*Commands to play Songs :*\n\n*/play* - (song name/yt url)\n- sᴛᴀʀᴛs ᴩʟᴀʏɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ sᴏɴɢ ᴏɴ ᴠᴄ.",
+            text=f"━━━━━━━ *MUSIC PANNEL* ━━━━━━━\n\n__*All Commands Only for Admins :*__\n\n*/pause* - Pause thcurrent ongoing stream.\n*/resume* - Resume the paused stream.\n*/skip* or */next* - Skip the current ongoing stream.\n*/end* or */stop* - End the current ongoing stream.\n\n*Commands to Autho/Unauth any Users :*\n• Authorized users can skip, pause, resume and end the stream without admin rights.\n\n*/auth* username or reply to users message.\n- ᴀᴅᴅ ᴀ ᴜsᴇʀ ᴛᴏ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀs ʟɪsᴛ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴩ.\n*/unauth* username or reply to users message.\n- ʀᴇᴍᴏᴠᴇs ᴛʜᴇ ᴜsᴇʀ ғʀᴏᴍ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀs ʟɪsᴛ.\n*/authusers* - Shows the list of authorized users of the group.\n\n*Commands to play Songs :*\n\n*/play* - (song name/yt url)\n- sᴛᴀʀᴛs ᴩʟᴀʏɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ sᴏɴɢ ᴏɴ ᴠᴄ.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -125,7 +119,7 @@ def ABG_about_callback(update, context):
 
     elif query.data == "ABG_notes":
         query.message.edit_text(
-            text=f"<b><u>SETTING UP NOTES</u> :</b>\n\nYou can Save message/media/audio or anything as notes. To get a note simple use # at the beginning of predetermined word.\nYou can also set buttons for notes and filtters (Refer help menu)",
+            text=f"<b><u>SETTING UP NOTES</u> :</b>\n\nYou can Save message/media/audio or anything as notes.\n\nTo get a note simple use # at the beginning of predetermined word.\nYou can also set buttons for notes and filtters (Refer help menu)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="⬅️ Back", callback_data="ABG_"),
@@ -153,7 +147,7 @@ def ABG_about_callback(update, context):
 
     elif query.data == "ABG_credit":  # Credit  i hope edit nai hoga
         query.message.edit_text(
-            text=f"━━━━━━━ *CREDIT* ━━━━━━━\n\n This Powefull group managent Bots Orginial Source Code is Provided by [ROCKY CEO](https://t.me/about_jeol). And now it is modified by @Shidoteshika1.",
+            text=f"━━━━━━━ *CREDIT* ━━━━━━━\n\nThis Powefull group managent Bots Orginial Source Code is Provided by [ROCKY CEO](https://t.me/about_jeol).\n And now it is modified by @Shidoteshika1.\n\n━━━━━━━ *CREDIT* ━━━━━━━",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
