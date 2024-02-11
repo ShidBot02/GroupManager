@@ -61,7 +61,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEX = """
-ʜᴇʟʟᴏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙʀᴏ . . . 
+Hᴇʟʟᴏ `{}`,\nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ. . . . 
 """
 
 
@@ -72,12 +72,12 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text=f"❕Help", callback_data="help_back"),
-        InlineKeyboardButton(text=f"⚡️Stats", callback_data="stats_callback"),
+        InlineKeyboardButton(text="⌬ Owner ⌬", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text=f"⚡️ Stats", callback_data="stats_callback"),
     ],
     [
         InlineKeyboardButton(text="🤖 About", callback_data="ABG_"),
-        InlineKeyboardButton(text="⌬ Owner ⌬", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text=f"❕Help", callback_data="help_back")
     ],
 ]
 
