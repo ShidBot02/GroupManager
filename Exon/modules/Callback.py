@@ -147,7 +147,7 @@ def ABG_about_callback(update, context):
 
     elif query.data == "ABG_credit":  # Credit  i hope edit nai hoga
         query.message.edit_text(
-            text=f"━━━━━━━ *CREDIT* ━━━━━━━\n\nThis Powefull group managent Bots Orginial Source Code is Provided by [ROCKY CEO](https://t.me/about_jeol).\n And now it is modified by @Shidoteshika1.\n\n━━━━━━━ *CREDIT* ━━━━━━━",
+            text=f"━━━━━━━ *CREDIT* ━━━━━━━\n\nThis Powefull group managent Bots Orginial Source Code is Provided by [ROCKY CEO](https://t.me/about_jeol).\n\nAnd now it is modified by @Shidoteshika1.\n\n━━━━━━━ *CREDIT* ━━━━━━━",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
