@@ -68,16 +68,16 @@ PM_START_TEX = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="❣ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ❣︎", url=f"t.me/{BOT_USERNAME}?startgroup=new"
+            text="➕ Add me to your Group/Channel ➕", url=f"t.me/{BOT_USERNAME}?startgroup=new"
         ),
     ],
     [
-        InlineKeyboardButton(text=f"🚁 ʜᴇʟᴘ 🚁", callback_data="help_back"),
-        InlineKeyboardButton(text=f"🥀 sᴛᴀᴛs 🥀", callback_data="stats_callback"),
+        InlineKeyboardButton(text=f"❕Help", callback_data="help_back"),
+        InlineKeyboardButton(text=f"⚡️Stats", callback_data="stats_callback"),
     ],
     [
-        InlineKeyboardButton(text="🏡 ᴀʙᴏᴜᴛ 🏡", callback_data="ABG_"),
-        InlineKeyboardButton(text="🥀 ᴏᴡɴᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="🤖 About", callback_data="ABG_"),
+        InlineKeyboardButton(text="⌬ Owner ⌬", url=f"tg://user?id={OWNER_ID}"),
     ],
 ]
 
